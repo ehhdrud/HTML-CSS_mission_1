@@ -1,0 +1,193 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1022px;
+  height: 1098px;
+  margin: 100px auto;
+}
+
+body > header {
+  width: 1022px;
+  height: 88px;
+}
+
+h1 {
+  margin-top: 0px;
+  margin-bottom: 48px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  width: 1022px;
+  height: 1010px;
+}
+
+section > header {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px;
+  gap: 10px;
+  width: 371px;
+  height: 28px;
+  left: 0px;
+  margin-top: 8px;
+  margin-bottom: 24px;
+}
+
+.main-title {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 115%;
+}
+
+.dividing-line {
+  color: var(--color-gray-600);
+}
+
+.sub-title {
+  color: var(--color-gray-600);
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 115%;
+}
+
+.logo {
+  position: relative;
+  width: 176px;
+  height: 40px;
+}
+
+.img-container-1 {
+  float: left;
+  position: relative;
+  width: 502px;
+  height: 310px;
+  margin-bottom: 16px;
+}
+
+.img-container-1:first-child {
+  margin-right: 7px;
+}
+
+.img-container-1:last-child {
+  margin-right: 8px;
+}
+
+.img-container-2 {
+  float: left;
+  position: relative;
+  width: 243px;
+  height: 310px;
+  margin-right: 16px;
+  margin-bottom: 16px;
+}
+
+.img-container-2:last-child {
+  margin-right: 0px;
+}
+
+.img-container-3 {
+  position: relative;
+  float: left;
+}
+
+.img-container-3:nth-child(1) {
+  width: 502px;
+  height: 310px;
+  margin-right: 16px;
+}
+
+.img-container-3:nth-child(2) {
+  width: 243px;
+  height: 310px;
+  margin-right: 16px;
+}
+
+.img-container-3:nth-child(3) {
+  width: 243px;
+  height: 310px;
+  margin-right: 0px;
+}
+
+.big-img-container {
+  width: 502px;
+  height: 310px;
+  border: 1px solid var(--color-gray-500);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.small-img-container {
+  width: 243px;
+  height: 310px;
+  border: 1px solid var(--color-gray-500);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  background-color: var(--color-opacity-20);
+  left: 20px;
+  top: 248px;
+  transition: background-color 0.5s;
+}
+
+a:hover > div {
+  border: 1px solid var(--color-blue-600);
+}
+
+.img-link:hover .arrow {
+  width: 112px;
+  background-color: var(--color-blue-600);
+}
+
+.img-link:hover .arrow::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: "구매하기";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16.8px;
+  color: var(--color-white);
+  margin-left: 17.4px;
+  margin-bottom: 2.1px;
+}
+
+a:focus > div {
+  border: 1px solid var(--color-blue-600);
+}
+
+.img-link:focus .arrow {
+  width: 112px;
+  background-color: var(--color-blue-600);
+}
+
+.img-link:focus .arrow::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: "구매하기";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16.8px;
+  color: var(--color-white);
+  margin-left: 17.4px;
+  margin-bottom: 2.1px;
+}
