@@ -1,3 +1,4 @@
+/* 1. 전체 */
 body {
   display: flex;
   flex-direction: column;
@@ -7,6 +8,7 @@ body {
   margin: 100px auto;
 }
 
+/* 2. 헤더 */
 body > header {
   width: 1022px;
   height: 88px;
@@ -17,6 +19,7 @@ h1 {
   margin-bottom: 48px;
 }
 
+/* 3. 섹션 */
 section {
   display: flex;
   flex-direction: column;
@@ -24,6 +27,7 @@ section {
   height: 1010px;
 }
 
+/* 3.1. 섹션: 헤더 */
 section > header {
   display: flex;
   justify-content: flex-start;
@@ -62,6 +66,7 @@ section > header {
   height: 40px;
 }
 
+/* 3.2. 섹션: 첫번째 줄 */
 .img-container-1 {
   position: relative;
   float: left;
@@ -78,6 +83,7 @@ section > header {
   margin-right: 8px;
 }
 
+/* 3.3. 섹션: 두번째 줄 */
 .img-container-2 {
   position: relative;
   float: left;
@@ -91,6 +97,7 @@ section > header {
   margin-right: 0px;
 }
 
+/* 3.4. 섹션: 세번째 줄 */
 .img-container-3 {
   position: relative;
   float: left;
@@ -114,6 +121,7 @@ section > header {
   margin-right: 0px;
 }
 
+/* 3.5. 섹션: 내부 요소 */
 .big-img-container {
   display: flex;
   justify-content: center;
@@ -144,6 +152,7 @@ section > header {
   transition: background-color 1s;
 }
 
+/* 3.6. 섹션: 동적 처리 */
 a:hover div:first-child {
   border: 1px solid var(--color-blue-600);
 }
