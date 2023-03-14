@@ -26,14 +26,10 @@ section {
 
 section > header {
   display: flex;
-  flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  position: relative;
-  left: 0px;
   width: 371px;
   height: 28px;
-  padding: 0px;
   margin-top: 8px;
   margin-bottom: 24px;
   gap: 10px;
@@ -62,7 +58,6 @@ section > header {
 }
 
 .logo {
-  position: relative;
   width: 176px;
   height: 40px;
 }
@@ -149,7 +144,7 @@ section > header {
   transition: background-color 1s;
 }
 
-a:hover > div {
+a:hover div:first-child {
   border: 1px solid var(--color-blue-600);
 }
 
@@ -171,7 +166,7 @@ a:hover > div {
   content: "구매하기";
 }
 
-a:focus > div {
+a:focus div:first-child {
   border: 1px solid var(--color-blue-600);
 }
 
